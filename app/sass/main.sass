@@ -92,13 +92,64 @@ a
 
   &:hover, &:focus
     text-decoration: none
-    
+
 input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 34px
   box-sizing: border-box
+  font-family: $default-font
+  border: none
+    radius: 0
+  height: 84px
+  width: 100%
+  background: #fff
+  font-size: 32px
+  font-weight: 500
+  color: #dfbcb0
+  &::placeholder
+    color: #dfbcb0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+textarea
+  height: 347px
+  padding: 30px 34px
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 14px
+
+button
+  outline: none
+  box-shadow: none
+  padding: 0
+  border: none
+  font-family: $default-font
+  cursor: pointer
+  transition: .3s ease
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 32px
+  font-weight: 500
+  height: 84px
+  padding: 0 71px
+
+.btn-accent
+  color: #dfbcb0
+  background: #2d2724
+  &:hover
+    background: #000
+    color: #fff
 
 .container
   max-width: 1660px
@@ -106,17 +157,29 @@ input, textarea, select
 .bg-pink
   background: $accent
 
+.bg-black
+  background: #000
+
 .color-text
   color: $text
 
 .color-white
   color: #fff
 
+.color-accent
+  color: $accent
+
+.style-italic
+  font-style: italic
+
 .text-decoration
   text-decoration: underline
 
 .text-justify
   text-align: justify
+
+.text-right
+  text-align: right
 
 strong
   font-weight: bold
@@ -136,10 +199,18 @@ strong
 footer
   flex: 0 0 auto
 
+h1
+  font-size: 222px
+  font-weight: bold
+  color: #dfbcb0
+
 h2
   width: 100%
   font-size: 88px
   font-weight: bold
+
+.h2-my
+  font-size: 66px
 
 h3
   font-size: 28px
@@ -149,8 +220,10 @@ h3
 .box-text
   font-size: 22px
   font-weight: 500
+
   p
     margin: 0 0 45px
+
     &:last-child
       margin: 0
 
@@ -158,6 +231,8 @@ h3
 .checkbox
   width: 62px
   height: 25px
+  margin: 0
+
   input
     display: none
 
@@ -170,11 +245,12 @@ h3
   border-radius: 13px
   background: #dfbcb0
   transition: .2s
+
   &:after
     content: ''
     position: absolute
     top: 50%
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     right: 4px
     width: 19px
     height: 19px
@@ -190,7 +266,6 @@ h3
       background: #868987
 
 
-
 //header
 header
   position: absolute
@@ -199,11 +274,14 @@ header
   width: 100%
   z-index: 3
   padding: 28px 0
+
   .container
     max-width: none
     padding: 0 28px
+
   .col-12
     padding: 0 28px
+
   .row
     margin: 0 -28px
 
@@ -215,14 +293,19 @@ header
   font-size: 28px
   font-weight: bold
   margin: 0 auto
+
   li
     margin: 0 34px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: $accent
+
       &:hover
         color: #fff
+
     .active
       color: #fff
       text-decoration: underline
@@ -234,7 +317,7 @@ header
   position: absolute
   right: 28px
   top: 50%
-  transform: translate(0,-50%)
+  transform: translate(0, -50%)
 
 .list-language
   display: flex
@@ -244,14 +327,19 @@ header
   font-weight: bold
   margin: 0 28px 0 0
   text-transform: uppercase
+
   li
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: $accent
+
       &:hover
         color: #fff
+
     .active
       color: #fff
 
@@ -261,7 +349,6 @@ header
 
 .volume-icon
   margin: 0 8px 0 0
-
 
 
 //main
@@ -284,6 +371,7 @@ main
 //contacts
 .contacts
   padding: 55px 0
+
   .container
     max-width: 1800px
 
@@ -292,10 +380,13 @@ main
   align-items: center
   flex-wrap: wrap
   margin: 0 93px 0 0
+
   li
     margin: 0 29px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -306,10 +397,13 @@ main
   align-items: center
   flex-wrap: wrap
   margin: 0 0 0 auto
+
   li
     margin: 0 70px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -319,6 +413,7 @@ main
   margin: 0 67px 0 0
   font-size: 22px
   font-weight: bold
+
   a
     color: $text
 
@@ -326,6 +421,7 @@ main
   li
     display: flex
     align-items: center
+
     p
       min-width: 48px
       margin: 0 22px 0 0
@@ -338,10 +434,13 @@ main
 //.about
 .about
   padding: 145px 0
+
   h2
     margin: 0 0 137px
+
   .box-text
     max-width: 664px
+
     strong
       margin: 0 0 45px
 
@@ -365,7 +464,7 @@ main
   position: absolute
   top: 50%
   left: 50%
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%)
   border: solid 2px #fff
     radius: 50%
   width: 74px
@@ -378,6 +477,7 @@ main
   margin: 0 auto
   max-width: 960px
   width: 100%
+
   h4
     font-size: 22px
     font-weight: 700
@@ -386,9 +486,11 @@ main
 .list-authors
   font-size: 28px
   font-weight: 500
+
   span
     font-weight: bold
     display: inline
+
   p
     display: inline
     color: #fff
@@ -396,6 +498,7 @@ main
 //.programs
 .programs
   padding: 130px 0 200px
+
   h2
     margin: 0 0 109px
 
@@ -405,8 +508,10 @@ main
   display: flex
   flex-direction: column
   align-items: flex-start
+
   &__footer
     margin: auto 0 0
+
   h3
     font-size: 40px
     font-weight: bold
@@ -438,13 +543,299 @@ main
   font-weight: bold
   margin: 30px 0 0
 
+a.color-white
+  &:hover
+    color: $accent
+
 //footer
 footer
   padding: 69px 0
+
   .list-social
     margin: 0 auto
     justify-content: center
 
+
+//main page
+.main-text
+  max-width: 461px
+  width: 100%
+  color: #dfbcb0
+  letter-spacing: -0.48px
+  font-style: italic
+  font-size: 24px
+  font-weight: 500
+  margin: 0 0 176px auto
+  order: -1
+
+.home-main
+  padding: 137px 0 304px
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+
+//sasts page
+.logo-header
+  max-width: 299px
+
+.header
+  position: relative
+  left: 0
+  top: 0
+  padding: 26px 0
+
+  .header-box
+    position: relative
+    right: 0
+    top: 0
+    transform: none
+
+.image-group
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+  .image-item
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+  .image
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    img
+      width: 100%
+
+.photo-caption
+  margin: 13px 0 0
+  font-size: 20px
+  width: 100%
+  font-weight: normal
+  h3
+    font-size: 40px
+    font-weight: bold
+    margin: 0 auto 10px
+
+.sasts-home
+  padding: 125px 0 200px
+
+.sasts-home__content
+  position: relative
+  z-index: 1
+
+.sasts-home__img
+  position: absolute
+  bottom: -40px
+  right: 95px
+  z-index: -1
+
+.container-my
+  .container
+    max-width: 1570px
+
+.callback
+  padding: 170px 0 180px
+  .box-text
+    max-width: 453px
+    width: 100%
+    margin: 34px 0 0
+
+.mail-author
+  margin: 44px 0 0
+  color: #2d2724
+  font-size: 32px
+  font-weight: bold
+
+.form
+  max-width: 786px
+  width: 100%
+  margin: 0 0 0 auto
+
+.image-center
+  margin: 0 auto 35px
+
+//happy
+.happy
+  padding: 240px 0
+  h2
+    margin: 0 0 242px
+    font-size: 154px
+
+//quote
+.quote
+  padding: 100px 0
+  .container
+    max-width: 1150px
+  h3
+    font-size: 40px
+  .box-text
+    font-size: 24px
+    p
+      margin: 0 0 27px
+
+.authors-photo
+  padding: 150px 0
+
+.authors-photo-wrapper
+  position: relative
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  z-index: 1
+  padding: 0 0 0 30px
+
+
+.authors-photo__content
+  max-width: 550px
+  width: 100%
+  padding: 10px 0 0
+  .box-text
+    font-size: 28px
+  h3
+    font-size: 44px
+    font-weight: bold
+    font-style: italic
+    color: $accent
+
+.authors-photo__image
+  max-width: 638px
+  width: 100%
+  position: absolute
+  right: 0
+  top: 0
+  z-index: -1
+
+.name-photo
+  background: #dfbcb0
+  padding: 2px 5px
+  color: #000
+  font-style: italic
+  font-size: 28px
+  width: fit-content
+  margin: 10px 0 60px
+
+.authors-photo-two
+  .authors-photo__image
+    max-width: 350px
+    position: relative
+    right: auto
+    bottom: auto
+    margin: 60px 0 0
+  .authors-photo__content
+    margin: 0 0 0 117px
+    max-width: 660px
+    padding: 0
+
+//starts
+.starts
+  padding: 80px 0 130px
+  h2
+    font-size: 154px
+
+.images-section
+  padding: 170px 0
+
+.images-section-two
+  .image-item
+    margin: 0
+    max-width: 544px
+
+.video-section
+  padding: 100px 0 170px
+
+.video-wrapper
+  position: relative
+  max-width: 997px
+  width: 100%
+  height: 559px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 30px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.video-section__content
+  margin: 0 0 0 auto
+
+  .box-text
+    font-size: 24px
+    margin: 0 0 128px
+    p
+      margin: 0
+    h3
+      font-size: 40px
+      font-weight: bold
+      color: $accent
+
+
+.authors-photo-three
+  .authors-photo__image
+    max-width: 779px
+    position: relative
+    margin: 0 0 0 -50px
+  .authors-photo-wrapper
+    align-items: center
+  .authors-photo__content
+    max-width: 430px
+
+.video-fluid
+  padding: 160px 0
+
+.video-fluid__title
+  padding: 0 36px 30px
+  font-size: 24px
+
+.video-fluid__box
+  width: 100%
+  //height: 1077px
+  video
+    width: 100%
+    //height: 100%
+
+.authors-photo-four
+  .authors-photo__image
+    max-width: 786px
+    margin: 0 0 0 84px
+  .authors-photo__content
+    max-width: 572px
+
+.quote-two
+  h3
+    margin: 0 0 54px
+
+.authors-photo-five
+  .authors-photo-wrapper
+    align-items: center
+  .authors-photo__content
+    max-width: 684px
+  .authors-photo__image
+    margin: 0
+    max-width: 473px
+
+.authors-photo-sex
+  .authors-photo__image
+    max-width: 686px
+
+.new-section
+  padding: 250px 0 130px
+  h2
+    font-size: 154px
+    font-weight: bold
+  &__content
+    position: relative
+    z-index: 1
+  &__img
+    max-width: 492px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    z-index: -1
+    right: 0
+    top: -130px
 
 
 @import "media"
