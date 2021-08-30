@@ -204,6 +204,9 @@ button {
 .color-text {
   color: #2d2724; }
 
+.color-black {
+  color: #000; }
+
 .color-white {
   color: #fff; }
 
@@ -1046,6 +1049,132 @@ footer {
   max-width: 1022px;
   width: 100%; }
 
+.wrapper-lid .menu li a {
+  color: #fff; }
+
+.wrapper-lid .menu li .active {
+  color: #fff; }
+
+.wrapper-lid .header-box {
+  position: relative;
+  top: 0;
+  right: 0;
+  -webkit-transform: none;
+          transform: none; }
+
+.wrapper-lid .list-language li a {
+  color: #fff; }
+
+.wrapper-lid .list-language li .active {
+  color: #000; }
+
+.wrapper-lid .volume-icon {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1); }
+
+.wrapper-lid .checkbox__text {
+  background: #fff; }
+
+.wrapper-lid .checkbox__text:after {
+  background: #dfbcb0; }
+
+.wrapper-lid .checkbox input:checked + .checkbox__text:after {
+  background: #dfbcb0; }
+
+.wrapper-lid .subtitle {
+  margin: 0 0 44px;
+  font-size: 31px;
+  font-weight: bold; }
+
+.wrapper-lid .box-text {
+  font-size: 14px;
+  font-weight: normal; }
+  .wrapper-lid .box-text h4 {
+    margin: 22px 0 0;
+    font-size: 31px;
+    font-weight: bold; }
+
+.wrapper-lid h2 {
+  margin: 0; }
+
+.kruts {
+  padding: 295px 0 208px; }
+
+.kruts-text {
+  font-size: 22px;
+  margin: 0 0 42px;
+  font-weight: 500; }
+  .kruts-text strong {
+    display: inline;
+    font-size: 31px;
+    font-weight: bold; }
+
+.kruts-box {
+  font-size: 22px;
+  margin: 0 0 30px;
+  font-weight: 500; }
+  .kruts-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 60px;
+    height: 99px; }
+    .kruts-box__icon img {
+      max-height: 100%; }
+
+.pasarga .kruts-text p {
+  margin: 0 0 30px; }
+  .pasarga .kruts-text p:last-child {
+    margin: 0; }
+
+.pasarga-video {
+  margin: 40px 0 50px auto;
+  max-width: 808px;
+  width: 100%; }
+  .pasarga-video .box-text {
+    font-size: 22px; }
+    .pasarga-video .box-text p {
+      margin: 0 0 10px; }
+
+.ziedojumi {
+  padding: 200px 0 130px; }
+  .ziedojumi .kruts-text {
+    margin: 50px 0 35px;
+    font-size: 22px;
+    font-weight: 500; }
+
+.ziedojumi-box {
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 670px;
+  width: 100%;
+  margin: 0 0 -50px; }
+  .ziedojumi-box:nth-child(even) {
+    margin: 0 0 0 auto; }
+    .ziedojumi-box:nth-child(even) .ziedojumi-box__icon {
+      margin: 0 auto 23px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .ziedojumi-box h4 {
+    font-size: 31px;
+    font-weight: bold;
+    margin: 0 0 25px; }
+  .ziedojumi-box__icon {
+    margin: 0 0 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1780px) {
@@ -1291,7 +1420,37 @@ footer {
     margin: 0 0 20px; }
   .links-all {
     margin: 40px auto 0;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .kruts {
+    padding: 220px 0 80px; }
+  .wrapper-lid .subtitle {
+    font-size: 22px;
+    margin: 0 0 30px; }
+  .wrapper-lid .box-text h4 {
+    margin: 0;
+    font-size: 22px; }
+  .kruts-text {
+    font-size: 18px;
+    margin: 0 0 30px; }
+    .kruts-text strong {
+      font-size: 22px; }
+    .kruts-text p {
+      margin: 0 0 20px; }
+  .kruts-box {
+    font-size: 18px; }
+  .wrapper-lid .box-text h4 {
+    font-size: 26px; }
+  .ziedojumi {
+    padding: 100px 0 40px; }
+    .ziedojumi .box-text {
+      margin: 30px 0; }
+  .ziedojumi-box {
+    font-size: 18px;
+    margin: 0 0 20px; }
+    .ziedojumi-box h4 {
+      font-size: 24px; }
+    .ziedojumi-box:nth-child(even) {
+      margin: 0 0 20px auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 930px) {

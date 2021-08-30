@@ -163,6 +163,9 @@ button
 .color-text
   color: $text
 
+.color-black
+  color: #000
+
 .color-white
   color: #fff
 
@@ -954,6 +957,118 @@ footer
   margin: 0 auto 54px
   max-width: 1022px
   width: 100%
+
+.wrapper-lid
+  .menu
+    li
+      a
+        color: #fff
+      .active
+        color: #fff
+  .header-box
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+  .list-language
+    li
+      a
+        color: #fff
+      .active
+        color: #000
+  .volume-icon
+    filter: brightness(0) invert(1)
+  .checkbox__text
+    background: #fff
+  .checkbox__text:after
+    background: $accent
+  .checkbox input:checked + .checkbox__text:after
+    background: $accent
+  .subtitle
+    margin: 0 0 44px
+    font-size: 31px
+    font-weight: bold
+  .box-text
+    font-size: 14px
+    font-weight: normal
+    h4
+      margin: 22px 0 0
+      font-size: 31px
+      font-weight: bold
+  h2
+    margin: 0
+
+.kruts
+  padding: 295px 0 208px
+
+
+
+.kruts-text
+  font-size: 22px
+  margin: 0 0 42px
+  font-weight: 500
+  strong
+    display: inline
+    font-size: 31px
+    font-weight: bold
+
+.kruts-box
+  font-size: 22px
+  margin: 0 0 30px
+  font-weight: 500
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 60px
+    height: 99px
+    img
+      max-height: 100%
+
+//pasarga
+.pasarga
+  .kruts-text
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.pasarga-video
+  margin: 40px 0 50px auto
+  max-width: 808px
+  width: 100%
+  .box-text
+    font-size: 22px
+    p
+      margin: 0 0 10px
+
+.ziedojumi
+  padding: 200px 0 130px
+  .kruts-text
+    margin: 50px 0 35px
+    font-size: 22px
+    font-weight: 500
+
+.ziedojumi-box
+  font-size: 22px
+  font-weight: 500
+  max-width: 670px
+  width: 100%
+  margin: 0 0 -50px
+  &:nth-child(even)
+    margin: 0 0 0 auto
+    .ziedojumi-box__icon
+      margin: 0 auto 23px
+      justify-content: center
+  h4
+    font-size: 31px
+    font-weight: bold
+    margin: 0 0 25px
+  &__icon
+    margin: 0 0 23px
+    display: flex
+    align-items: center
+
 
 @import "media"
 // Всегда в конце
